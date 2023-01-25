@@ -1,7 +1,19 @@
-# Language Speed Test
+# Counting
 
-Current Languages:
+This project is to display the implementation of a conditional loop and standard output in a variety of languages.
 
+## Remarks
+
+In spite of optimization, I went for a "more is more" approach and chose to sometimes include more code if I thought it would help illustrate the characteristics of the language.
+
+Other times, I simply had no idea what I was doing and just waited for it to successfully compile.
+
+Sorry about Smalltalk. I'll get a VM for it one day.
+
+
+## Current Languages:
+
+- Ada
 - Bash
 - C
 - C++
@@ -17,61 +29,68 @@ Current Languages:
 - Python
 - Ruby
 - Rust
+- Smalltalk
 
 Coming soon:
 
-- Ada
 - BF (maybe)
 - SELF
 
-## Bash
+### Ada
+
+- compile:  
+`gnat make count.adb -o ada_count`
+- run:  
+`time ./ada_count`
+
+### Bash
 
 - make executable:  
 `chmod +x count.bash`
 - run:  
 `time bash count.bash`
 
-## C
+### C
 
 - compile:  
 `cc main.c -o c_count`
 - run:  
 `time ./c_count`
 
-## C++
+### C++
 
 - compile:  
 `g++ count.cpp`
 - run:  
 `time ./a.out`
 
-## C#
+### C#
 
 - compile:  
 `mcs -out:cs_count.exe count.cs`
 - run:  
 `mono cs_count.exe`
 
-## COBOL
+### COBOL
 
 - compile:  
 `cobc -x count.cbl`
 - run:  
 `./count`
 
-## Dart
+### Dart
 
 - run:  
 `dart run main.dart`
 
-## FORTRAN
+### FORTRAN
 
 - compile:  
 `gfortran count.f90 -o fort_count`
 - run:  
 `./fort_count`
 
-## Go
+### Go
 
 - run w/ interpreter:  
 `go run count.go`
@@ -80,43 +99,48 @@ Coming soon:
 - run:  
 `./count`
 
-## Java
+### Java
 
 - compile:
 `javac count.java`
 - run:  
 `time java count`
 
-## Kotlin
+### Kotlin
 
 - compile:  
 `kotlinc count.kt`
 - run:  
 `time kotlin CountKt`
 
-## LISP
+### LISP
 
 - run:  
 `sbcl --script count.lsp`
 
-## Perl
+### Perl
 
 - compile/run:  
 `perl count.pl`
 
-## Python
+### Python
 
 - run:
 `time python3 count.py`
 
-## Ruby
+### Ruby
 
 - run:  
 `time ruby count.rb`
 
-## Rust
+### Rust
 
 - compile:  
 `rustc main.rs`
 - run:  
 `time ./main`
+
+### Smalltalk
+
+- run:  
+`gst count.st`  

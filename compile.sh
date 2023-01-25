@@ -1,5 +1,6 @@
 echo "You will need the following packages for all of the sources to compile:
 
+gnat
 gcc
 g++
 mono-complete
@@ -18,6 +19,7 @@ perl
 python3
 rbenv
 ruby-bundler
+gnu-smalltalk
 "
 
 read -p "Press enter to continue..."
@@ -26,6 +28,7 @@ mkdir ./bin
 cd ./src
 
 echo "Compiling sources..."
+gnat make count.adb -o ada_count
 gcc main.c -o c_count
 g++ count.cpp -o cpp_count
 mcs -out:cs_count.exe count.cs
@@ -38,6 +41,7 @@ rustc main.rs -o rust_count
 echo "Compiling complete."
 
 echo "Moving binaries..."
+mv ada_count ../bin
 mv c_count ../bin
 mv cpp_count ../bin
 mv cs_count.exe ../bin
