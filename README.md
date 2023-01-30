@@ -23,12 +23,14 @@ Sorry about Smalltalk. I'll get a VM for it one day.
 - FORTRAN
 - Go
 - Java
+- JavaScript
 - Kotlin
 - LISP (Common)
 - Perl
 - Python
 - Ruby
 - Rust
+- Scala
 - Smalltalk
 
 Coming soon:
@@ -104,14 +106,19 @@ Coming soon:
 - compile:
 `javac count.java`
 - run:  
-`time java count`
+`java count`
+
+### JavaScript
+
+- run:
+`node count.js`  
 
 ### Kotlin
 
 - compile:  
 `kotlinc count.kt`
 - run:  
-`time kotlin CountKt`
+`kotlin CountKt`
 
 ### LISP
 
@@ -126,19 +133,26 @@ Coming soon:
 ### Python
 
 - run:
-`time python3 count.py`
+`python3 count.py`
 
 ### Ruby
 
 - run:  
-`time ruby count.rb`
+`ruby count.rb`
 
 ### Rust
 
 - compile:  
 `rustc main.rs`
 - run:  
-`time ./main`
+`./main`
+
+### Scala
+
+- compile:
+`scalac scalaCount.scala`  
+- run:
+`scala scalaCount`  
 
 ### Smalltalk
 
