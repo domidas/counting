@@ -11,6 +11,7 @@ default-jdk
 kotlin
 rustc
 scala
+nim
 "
 echo "In addition, you will need the following packages to run the scripts:
 
@@ -22,6 +23,8 @@ rbenv
 ruby-bundler
 gnu-smalltalk
 nodejs
+php
+.NET SDK
 "
 
 read -p "Press enter to continue..."
@@ -50,6 +53,7 @@ javac count.java
 kotlinc count.kt
 rustc main.rs -o rust_count
 scalac scalaCount.scala
+nim c -o:nim_count ./count.nim
 echo "Compiling complete."
 
 echo "Moving binaries..."
@@ -64,6 +68,7 @@ mv count.class ../bin
 mv CountKt.class ../bin
 mv rust_count ../bin
 mv *.class ../bin # I'll figure out how to escape apostrophes at some point
+mv nim_count ../bin
 echo "Binaries Moved.
 
 Exiting...

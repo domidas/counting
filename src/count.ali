@@ -20,7 +20,7 @@ D a-tags.ads		20210408115627 491b781d ada.tags%s
 D a-textio.ads		20210408115627 aef4d56d ada.text_io%s
 D a-tiinio.ads		20210408115627 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210408115627 0e9b276f ada.unchecked_conversion%s
-D count.adb		20230126041258 4565a5a2 count%b
+D count.adb		20230131020144 4565a5a2 count%b
 D interfac.ads		20210408115627 5ab55268 interfaces%s
 D i-cstrea.ads		20210408115627 e53d8b8e interfaces.c_streams%s
 D system.ads		20210408115627 4635ec04 system%s

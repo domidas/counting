@@ -1,1 +1,5 @@
 bin/
+src/*.o
+src/*.ali
+src/*.hs
+src/Package.swift.bak

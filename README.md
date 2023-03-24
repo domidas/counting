@@ -21,12 +21,15 @@ Sorry about Smalltalk. I'll get a VM for it one day.
 - COBOL
 - Dart
 - FORTRAN
+- F#
 - Go
 - Java
 - JavaScript
 - Kotlin
 - LISP (Common)
+- Nim
 - Perl
+- PHP
 - Python
 - Ruby
 - Rust
@@ -92,6 +95,11 @@ Coming soon:
 - run:  
 `./fort_count`
 
+### F#
+
+- run:  
+`dotnet fsi count.fsx`
+
 ### Go
 
 - run w/ interpreter:  
@@ -125,10 +133,22 @@ Coming soon:
 - run:  
 `sbcl --script count.lsp`
 
+### Nim
+
+- compile:  
+`nim c -o:nim_count ./count.nim`
+- run:  
+`./nim_count`
+
 ### Perl
 
 - compile/run:  
 `perl count.pl`
+
+### PHP
+
+- run:  
+`php count.php`
 
 ### Python
 
@@ -149,9 +169,9 @@ Coming soon:
 
 ### Scala
 
-- compile:
+- compile:  
 `scalac scalaCount.scala`  
-- run:
+- run:  
 `scala scalaCount`  
 
 ### Smalltalk
