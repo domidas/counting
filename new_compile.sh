@@ -1,5 +1,21 @@
 #!/bin/bash:
 
+# move file function
+moveToBin () {
+  mv $1 ../bin
+}
+
+# delete files that will be regenerated during recompilation
+deleteTempFile () {
+  rm $1
+}
+
+# array of binary filenames
+declare -a filenameArray=("ada_count" "c_count" "cpp_count" "cs_count.exe" "cobol_count" "fortran_count" "go_count" "rust_count" "nim_count" "hs_count" "*.class" "*.hi" "*.o" )
+
+# array of temp filenames
+declare -a tempFilesArray=("*.ali" "*.o" "*.hi" )
+
 echo "You will need the following packages for all of the sources to compile:
 
 gnat
@@ -43,9 +59,11 @@ fi
 
 mkdir ./bin
 cd ./src
-rm *.ali
-rm *.o
-rm *.hi
+
+echo "Deleting temporary files..."
+for filename in ${tempFilesArray[@]}; do
+  deleteTempFile $filename
+done
 
 echo "Compiling sources..."
 gnat make count.adb -o ada_count
@@ -64,19 +82,9 @@ ghc -o hs_count count.hs
 echo "Compiling complete."
 
 echo "Moving binaries..."
-mv ada_count ../bin
-mv c_count ../bin
-mv cpp_count ../bin
-mv cs_count.exe ../bin
-mv cobol_count ../bin
-mv fortran_count ../bin
-mv go_count ../bin
-mv count.class ../bin
-mv CountKt.class ../bin
-mv rust_count ../bin
-mv *.class ../bin # I'll figure out how to escape apostrophes at some point
-mv nim_count ../bin
-mv hs_count ../bin && mv *.hi ../bin && mv *.o ../bin
+for filename in ${filenameArray[@]}; do
+  moveToBin $filename
+done
 echo "Binaries Moved.
 
 Exiting...
