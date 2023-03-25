@@ -23,6 +23,7 @@ Sorry about Smalltalk. I'll get a VM for it one day.
 - FORTRAN
 - F#
 - Go
+- Haskell
 - Java
 - JavaScript
 - Kotlin
@@ -108,6 +109,13 @@ Coming soon:
 `go build count.go`
 - run:  
 `./count`
+
+### Haskell
+
+- compile:
+`ghc -o hs_count count.hs`  
+- run:
+`./hs_count`  
 
 ### Java
 
