@@ -44,6 +44,7 @@ gnu-smalltalk
 nodejs
 php
 .NET SDK
+yabasic
 "
 
 read -p "Press enter to continue..."

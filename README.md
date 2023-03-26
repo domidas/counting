@@ -15,6 +15,7 @@ Sorry about Smalltalk. I'll get a VM for it one day.
 
 - Ada
 - Bash
+- BASIC
 - C
 - C++
 - C#
@@ -47,28 +48,33 @@ Coming soon:
 - compile:  
 `gnat make count.adb -o ada_count`
 - run:  
-`time ./ada_count`
+`./ada_count`
 
 ### Bash
 
 - make executable:  
 `chmod +x count.bash`
 - run:  
-`time bash count.bash`
+`bash count.bash`
+
+### BASIC
+
+- run:  
+`yabasic count.bas`  
 
 ### C
 
 - compile:  
 `cc main.c -o c_count`
 - run:  
-`time ./c_count`
+`./c_count`
 
 ### C++
 
 - compile:  
 `g++ count.cpp`
 - run:  
-`time ./a.out`
+`./a.out`
 
 ### C#
 
