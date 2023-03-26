@@ -45,6 +45,7 @@ nodejs
 php
 .NET SDK
 yabasic
+wine
 "
 
 read -p "Press enter to continue..."

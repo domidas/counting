@@ -16,6 +16,7 @@ Sorry about Smalltalk. I'll get a VM for it one day.
 - Ada
 - Bash
 - BASIC
+- Batch
 - C
 - C++
 - C#
@@ -61,6 +62,13 @@ Coming soon:
 
 - run:  
 `yabasic count.bas`  
+
+### Batch
+
+- drop into cmd shell:  
+`wine cmd.exe`  
+- run:  
+`count.bat`  
 
 ### C
 
@@ -118,21 +126,21 @@ Coming soon:
 
 ### Haskell
 
-- compile:
+- compile:  
 `ghc -o hs_count count.hs`  
-- run:
+- run:  
 `./hs_count`  
 
 ### Java
 
-- compile:
+- compile:  
 `javac count.java`
 - run:  
 `java count`
 
 ### JavaScript
 
-- run:
+- run:  
 `node count.js`  
 
 ### Kotlin
@@ -166,7 +174,7 @@ Coming soon:
 
 ### Python
 
-- run:
+- run:  
 `python3 count.py`
 
 ### Ruby
