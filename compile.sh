@@ -11,7 +11,7 @@ deleteTempFile () {
 }
 
 # array of binary filenames
-declare -a filenameArray=("ada_count" "c_count" "cpp_count" "cs_count.exe" "cobol_count" "fortran_count" "go_count" "rust_count" "nim_count" "hs_count" "*.class" "*.hi" "*.o" )
+declare -a filenameArray=("ada_count" "c_count" "cpp_count" "cs_count.exe" "cobol_count" "fortran_count" "go_count" "rust_count" "nim_count" "hs_count" "d_count" "*.class" "*.hi" "*.o" )
 
 # array of temp filenames
 declare -a tempFilesArray=("*.ali" "*.o" "*.hi" )
@@ -31,6 +31,7 @@ rustc
 scala
 nim
 ghc
+dmd
 "
 echo "In addition, you will need the following packages to run the scripts:
 
@@ -81,6 +82,7 @@ rustc main.rs -o rust_count
 scalac scalaCount.scala
 nim c -o:nim_count ./count.nim
 ghc -o hs_count count.hs
+dmd -of=d_count count.d
 echo "Compiling complete."
 
 echo "Moving binaries..."

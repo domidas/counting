@@ -21,6 +21,7 @@ Sorry about Smalltalk. I'll get a VM for it one day.
 - C++
 - C#
 - COBOL
+- D
 - Dart
 - FORTRAN
 - F#
@@ -96,7 +97,14 @@ Coming soon:
 - compile:  
 `cobc -x count.cbl`
 - run:  
-`./count`
+`./cobol_count`
+
+### D
+
+- compile:  
+`dmd -of=d_count count.d`  
+- run:  
+`./d_count`
 
 ### Dart
 
