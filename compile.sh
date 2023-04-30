@@ -47,6 +47,7 @@ php
 .NET SDK
 yabasic
 wine
+lua5.3
 "
 
 read -p "Press enter to continue..."
