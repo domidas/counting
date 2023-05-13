@@ -31,6 +31,7 @@ Sorry about Smalltalk. I'll get a VM for it one day.
 - JavaScript
 - Kotlin
 - LISP (Common)
+- LOLCODE
 - Lua
 - Nim
 - Perl
@@ -164,6 +165,11 @@ Coming soon:
 
 - run:  
 `sbcl --script count.lsp`
+
+### LOLCODE
+
+- compile/run:  
+`lci count.lo`
 
 ### Lua
 

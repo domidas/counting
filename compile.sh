@@ -49,6 +49,7 @@ yabasic
 wine
 lua5.3
 r-base
+lci
 "
 
 read -p "Press enter to continue..."
