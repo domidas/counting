@@ -36,6 +36,7 @@ Sorry about Smalltalk. I'll get a VM for it one day.
 - Perl
 - PHP
 - Python
+- R
 - Ruby
 - Rust
 - Scala
@@ -190,6 +191,11 @@ Coming soon:
 
 - run:  
 `python3 count.py`
+
+### R
+
+- run:  
+`Rscript count.r`
 
 ### Ruby
 

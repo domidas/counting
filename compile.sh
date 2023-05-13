@@ -48,6 +48,7 @@ php
 yabasic
 wine
 lua5.3
+r-base
 "
 
 read -p "Press enter to continue..."
