@@ -180,7 +180,8 @@ Coming soon:
 
 ### MATLAB
 
-You'll need the MATLAB IDE, like how Swift only works well with Xcode, the only difference being people use Swift outside of college
+run:  
+`octave count.m`
 
 ### Nim
 
