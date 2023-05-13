@@ -10,11 +10,19 @@ deleteTempFile () {
   rm $1
 }
 
+# delete directories that will be regenerated during recompilation
+deleteTempDir () {
+  rm -rf $1
+}
+
 # array of binary filenames
-declare -a filenameArray=("ada_count" "c_count" "cpp_count" "cs_count.exe" "cobol_count" "fortran_count" "go_count" "rust_count" "nim_count" "hs_count" "d_count" "*.class" "*.hi" "*.o" )
+declare -a filenameArray=("ada_count" "c_count" "cpp_count" "cs_count.exe" "cobol_count" "fortran_count" "go_count" "rust_count" "nim_count" "hs_count" "d_count" "*.class" "*.hi" "*.o" "*.ali" )
 
 # array of temp filenames
-declare -a tempFilesArray=("*.ali" "*.o" "*.hi" )
+declare -a tempFilesArray=("*.ali" "*.o" "*.hi")
+
+# array of temp directory names
+declare -a tempDirArray=("META-INF")
 
 echo "You will need the following packages for all of the sources to compile:
 
@@ -32,6 +40,7 @@ scala
 nim
 ghc
 dmd
+swift
 "
 echo "In addition, you will need the following packages to run the scripts:
 
@@ -66,10 +75,14 @@ fi
 mkdir ./bin
 cd ./src
 
-echo "Deleting temporary files..."
+echo "Deleting temporary files and directories..."
 for filename in ${tempFilesArray[@]}; do
   deleteTempFile $filename
 done
+for dirname in ${tempDirArray[@]}; do
+  deleteTempDir $dirname
+done
+
 
 echo "Compiling sources..."
 gnat make count.adb -o ada_count
@@ -91,6 +104,9 @@ echo "Compiling complete."
 echo "Moving binaries..."
 for filename in ${filenameArray[@]}; do
   moveToBin $filename
+done
+for dirname in ${tempDirArray[@]}; do
+  moveToBin $dirname
 done
 echo "Binaries Moved.
 

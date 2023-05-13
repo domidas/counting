@@ -42,6 +42,7 @@ Sorry about Smalltalk. I'll get a VM for it one day.
 - Rust
 - Scala
 - Smalltalk
+- Swift
 
 Coming soon:
 
@@ -98,7 +99,7 @@ Coming soon:
 ### COBOL
 
 - compile:  
-`cobc -x count.cbl`
+`cobc -x count.cbl -o cobol_count`
 - run:  
 `./cobol_count`
 
@@ -226,3 +227,8 @@ Coming soon:
 
 - run:  
 `gst count.st`  
+
+### Swift
+
+- run:  
+`swift count.swift`

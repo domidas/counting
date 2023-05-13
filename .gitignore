@@ -2,7 +2,6 @@ bin/
 src/*.o
 src/*.ali
 src/*.hi
-src/Package.swift.bak
 src/*.a68
 src/*.erl
-src/*.bzl
+scripts/*.bzl

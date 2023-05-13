@@ -3,8 +3,8 @@
 
 :whileLoop
     if %n% lss 1000000 (
-        echo %n%
         set /a "n = n + 1"
+	echo %n%
         goto :whileLoop
     )
 
