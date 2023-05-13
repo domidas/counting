@@ -33,6 +33,7 @@ Sorry about Smalltalk. I'll get a VM for it one day.
 - LISP (Common)
 - LOLCODE
 - Lua
+- MATLAB
 - Nim
 - Perl
 - PHP
@@ -176,6 +177,10 @@ Coming soon:
 
 - run:  
 `lua count.lua`
+
+### MATLAB
+
+You'll need the MATLAB IDE, like how Swift only works well with Xcode, the only difference being people use Swift outside of college
 
 ### Nim
 

@@ -59,6 +59,7 @@ wine
 lua5.3
 r-base
 lci
+matlab
 "
 
 read -p "Press enter to continue..."
