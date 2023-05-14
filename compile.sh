@@ -60,6 +60,7 @@ lua5.3
 r-base
 lci
 octave
+rocky
 "
 
 read -p "Press enter to continue..."

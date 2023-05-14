@@ -39,6 +39,7 @@ Sorry about Smalltalk. I'll get a VM for it one day.
 - PHP
 - Python
 - R
+- Rockstar
 - Ruby
 - Rust
 - Scala
@@ -180,7 +181,7 @@ Coming soon:
 
 ### MATLAB
 
-run:  
+- run:  
 `octave count.m`
 
 ### Nim
@@ -209,6 +210,11 @@ run:
 
 - run:  
 `Rscript count.r`
+
+### Rockstar
+
+- run:  
+`./rockstar --infinite-loops count.rock`
 
 ### Ruby
 
