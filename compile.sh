@@ -61,6 +61,7 @@ r-base
 lci
 octave
 rocky
+julia
 "
 
 read -p "Press enter to continue..."

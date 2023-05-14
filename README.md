@@ -29,6 +29,7 @@ Sorry about Smalltalk. I'll get a VM for it one day.
 - Haskell
 - Java
 - JavaScript
+- Julia
 - Kotlin
 - LISP (Common)
 - LOLCODE
@@ -156,6 +157,12 @@ Coming soon:
 
 - run:  
 `node count.js`  
+
+### Julia
+
+- run:  
+`julia count.jl`
+
 
 ### Kotlin
 
