@@ -1,0 +1,7 @@
+#!/bin/dash
+
+N=0
+while [ $N -lt 1000000 ]; do
+    N=$( expr $N + 1)
+    echo $N
+done

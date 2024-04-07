@@ -45,6 +45,7 @@ swift
 echo "In addition, you will need the following packages to run the scripts:
 
 dart
+dash
 sbcl
 perl
 python3

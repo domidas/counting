@@ -23,6 +23,7 @@ Sorry about Smalltalk. I'll get a VM for it one day.
 - COBOL
 - D
 - Dart
+- Dash (POSIX-compliant)
 - FORTRAN
 - F#
 - Go
