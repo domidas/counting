@@ -119,6 +119,13 @@ Coming soon:
 - run:  
 `dart run main.dart`
 
+### Dash
+
+- run:  
+`dash count.dash`  
+--OR--    
+`/bin/sh count.dash`  
+  
 ### FORTRAN
 
 - compile:  
